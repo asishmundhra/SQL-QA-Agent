@@ -10,9 +10,9 @@ Framework-agnostic SQL quality checker orchestrated with LangGraph.
 - Baseline regression detection: compare current metrics to saved baseline.
 - CLI via `sqlqa check --policy-path sql-policy.yaml --out report.md`.
 
-## Architecture (flow)
+<!-- ## Architecture (flow)
 ![Architecture](archdiagram.jpg)
-(https://drive.google.com/file/d/1_8TjLSWT0ZejePMVMRqOe_HopRLoZWI9/view?usp=sharing)
+(https://drive.google.com/file/d/1_8TjLSWT0ZejePMVMRqOe_HopRLoZWI9/view?usp=sharing) -->
 
 ## Quickstart
 1. Ensure Python 3.10+ is installed.
