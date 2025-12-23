@@ -1,0 +1,27 @@
+[project]
+name = "sqlqa"
+version = "0.1.0"
+description = "Framework-agnostic SQL static QA tool powered by LangGraph."
+authors = [{ name = "SQLQA", email = "dev@example.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=1.0.4,<2.0.0",
+    "sqlglot>=25.0.0,<29.0.0",
+    "pydantic>=2.6.0",
+    "pyyaml>=6.0.0",
+    "typer>=0.12.0,<0.13.0",
+    "click>=8.1,<8.2",
+    "mysql-connector-python>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+]
+
+[project.scripts]
+sqlqa = "sqlqa.cli:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,21 @@
+targets:
+  include_paths:
+    - "**/*.py"
+    - "**/*.sql"
+  exclude_paths:
+    - "tests/**"
+    - "migrations/**"
+
+static_rules:
+  forbid_select_star: true
+  forbid_update_delete_without_where: true
+  forbid_leading_wildcard_like: true
+  max_in_list: 5
+  require_explicit_columns_in_joins: true
+
+severity:
+  select_star: "warning"
+  update_delete_without_where: "error"
+  leading_wildcard_like: "warning"
+  non_sargable_predicate: "warning"
+  long_in_list: "info"
